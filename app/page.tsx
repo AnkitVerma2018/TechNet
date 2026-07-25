@@ -4,10 +4,10 @@ import { HeroSection } from '@/components/sections/hero'
 import { ServicesSection } from '@/components/sections/services'
 import { ProductsSection } from '@/components/sections/products'
 import { FeaturesSection } from '@/components/sections/features'
-import { TechnologiesSection } from '@/components/sections/technologies'
+// import { TechnologiesSection } from '@/components/sections/technologies'
 import { WhyChooseUsSection } from '@/components/sections/why-choose-us'
 import { ProcessSection } from '@/components/sections/process'
-import { IndustriesSection } from '@/components/sections/industries'
+// import { IndustriesSection } from '@/components/sections/industries'
 import { FAQSection } from '@/components/sections/faq'
 import { ContactSection } from '@/components/sections/contact'
 
@@ -19,10 +19,10 @@ export default function Home() {
       <ServicesSection />
       <ProductsSection />
       <FeaturesSection />
-      <TechnologiesSection />
+      {/* <TechnologiesSection /> */}
       <WhyChooseUsSection />
       <ProcessSection />
-      <IndustriesSection />
+      {/* <IndustriesSection /> */}
       <FAQSection />
       <ContactSection />
       <Footer />

@@ -2,6 +2,7 @@ import {
   ArrowRight,
   CheckCircle2,
   Clock,
+  Headphones,
   Mail,
   MapPin,
   MessageCircle,
@@ -22,7 +23,7 @@ const quickLinks = [
 
 const services = [
   'Custom Software Development',
-  'HMS & Clinic Software',
+  'ChikisaPro Hospital Management System',
   'CRM Development',
   'Web Application Development',
   'Inventory & Billing Systems',
@@ -44,8 +45,8 @@ export function Footer() {
       <div className="h-1.5 w-full bg-linear-to-r from-[#49a5d6] via-[#0b568c] to-[#49a5d6]" />
 
       {/* Background Decorations */}
-      <div className="pointer-events-none absolute inset-0">
-        <div className="absolute -left-40 top-20 h-100px w-100px rounded-full bg-[#2c83b7]/10 blur-3xl" />
+      <div className="pointer-events-none absolute inset-0" aria-hidden="true">
+        <div className="absolute -left-40 top-20 h-100 w-100 rounded-full bg-[#2c83b7]/10 blur-3xl" />
 
         <div className="absolute -right-40 bottom-0 h-115 w-115 rounded-full bg-[#49a5d6]/10 blur-3xl" />
 
@@ -58,16 +59,22 @@ export function Footer() {
           }}
         />
 
-        <div className="absolute -right-20 -top-24 h-72 w-72 rounded-full border-45 border-white/025]" />
+        <div className="absolute -right-20 -top-24 h-72 w-72 rounded-full border-45 border-white/5" />
       </div>
 
       {/* Footer CTA */}
       <div className="relative border-b border-white/10">
         <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
           <div className="relative overflow-hidden rounded-3xl border border-white/15 bg-linear-to-r from-[#0a4c82] via-[#0b568c] to-[#176ca3] px-6 py-8 shadow-2xl shadow-black/20 sm:px-9">
-            <div className="pointer-events-none absolute -right-16 -top-24 h-64 w-64 rounded-full border-35 border-white/5" />
+            <div
+              className="pointer-events-none absolute -right-16 -top-24 h-64 w-64 rounded-full border-35 border-white/5"
+              aria-hidden="true"
+            />
 
-            <div className="pointer-events-none absolute -bottom-24 left-[35%] h-48 w-48 rounded-full bg-[#70c7ee]/20 blur-3xl" />
+            <div
+              className="pointer-events-none absolute -bottom-24 left-[35%] h-48 w-48 rounded-full bg-[#70c7ee]/20 blur-3xl"
+              aria-hidden="true"
+            />
 
             <div className="relative flex flex-col items-start justify-between gap-7 lg:flex-row lg:items-center">
               <div className="flex max-w-3xl items-start gap-4">
@@ -86,14 +93,14 @@ export function Footer() {
 
                   <p className="mt-3 max-w-2xl text-sm leading-6 text-white/75 sm:text-base">
                     Share your requirements with us and get a software solution
-                    developed according to your workflow and business goals.
+                    developed around your workflow and business goals.
                   </p>
                 </div>
               </div>
 
               <a
                 href="#contact"
-                className="inline-flex h-12 shrink-0 items-center justify-center rounded-xl bg-white px-6 text-sm font-extrabold text-[#06345d] shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#eaf5fc] hover:shadow-xl"
+                className="inline-flex h-12 shrink-0 items-center justify-center rounded-xl bg-white px-6 text-sm font-extrabold text-[#06345d] shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#eaf5fc] hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#91dcff] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0b568c]"
               >
                 Discuss Your Project
                 <ArrowRight className="ml-2 h-4 w-4" />
@@ -108,11 +115,10 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-[1.3fr_0.8fr_1fr_1.25fr]">
           {/* Company Information */}
           <div>
-            {/* Logo Area */}
             <a
-              href="#"
+              href="/"
               aria-label="TechNet Solution Home"
-              className="inline-flex items-center"
+              className="inline-flex items-center rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#91dcff]"
             >
               <div className="overflow-hidden rounded-xl bg-white px-3 py-2 shadow-lg">
                 <img
@@ -124,13 +130,13 @@ export function Footer() {
             </a>
 
             <p className="mt-6 max-w-sm text-sm leading-7 text-white/65">
-              We develop customized software, hospital management systems, CRM
-              platforms, websites and business applications according to your
-              exact requirements.
+              TechNet Solution develops customized software, ChikisaPro
+              hospital management systems, CRM platforms, websites and business
+              applications according to your requirements.
             </p>
 
             {/* Motto */}
-            <div className="mt-6 rounded-2xl border border-white/10 bg-white/6] p-5 backdrop-blur-sm">
+            <div className="mt-6 rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur-sm">
               <p className="text-xl font-extrabold text-white">
                 Your Vision,
                 <span className="ml-1 text-[#91dcff]">Our Code</span>
@@ -164,10 +170,9 @@ export function Footer() {
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    className="group inline-flex items-center gap-2 text-sm text-white/65 transition-all duration-300 hover:translate-x-1 hover:text-[#91dcff]"
+                    className="group inline-flex items-center gap-2 rounded-sm text-sm text-white/65 transition-all duration-300 hover:translate-x-1 hover:text-[#91dcff] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#91dcff]"
                   >
                     <span className="h-1.5 w-1.5 rounded-full bg-[#49a5d6] transition-transform duration-300 group-hover:scale-150" />
-
                     {link.name}
                   </a>
                 </li>
@@ -197,10 +202,10 @@ export function Footer() {
             <FooterHeading title="Contact Information" />
 
             <div className="mt-6 space-y-4">
-              {/* Phone */}
               <a
                 href="tel:+919084611723"
-                className="group flex items-start gap-3 rounded-xl border border-white/10 bg-white/5] p-4 transition-all duration-300 hover:border-[#49a5d6]/40 hover:bg-white/8"
+                aria-label="Call TechNet Solution"
+                className="group flex items-start gap-3 rounded-xl border border-white/10 bg-white/5 p-4 transition-all duration-300 hover:border-[#49a5d6]/40 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#91dcff]"
               >
                 <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#176ca3]/30 text-[#91dcff]">
                   <Phone className="h-5 w-5" />
@@ -217,10 +222,10 @@ export function Footer() {
                 </span>
               </a>
 
-              {/* Email */}
               <a
                 href="mailto:technetsolutiontke19@gmail.com"
-                className="group flex items-start gap-3 rounded-xl border border-white/10 bg-white/5] p-4 transition-all duration-300 hover:border-[#49a5d6]/40 hover:bg-white/8"
+                aria-label="Email TechNet Solution"
+                className="group flex items-start gap-3 rounded-xl border border-white/10 bg-white/5 p-4 transition-all duration-300 hover:border-[#49a5d6]/40 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#91dcff]"
               >
                 <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#176ca3]/30 text-[#91dcff]">
                   <Mail className="h-5 w-5" />
@@ -237,8 +242,7 @@ export function Footer() {
                 </span>
               </a>
 
-              {/* Address */}
-              <div className="flex items-start gap-3 rounded-xl border border-white/10 bg-white/5] p-4">
+              <div className="flex items-start gap-3 rounded-xl border border-white/10 bg-white/5 p-4">
                 <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#176ca3]/30 text-[#91dcff]">
                   <MapPin className="h-5 w-5" />
                 </span>
@@ -254,8 +258,7 @@ export function Footer() {
                 </span>
               </div>
 
-              {/* Business Hours */}
-              <div className="flex items-start gap-3 rounded-xl border border-white/10 bg-white/5] p-4">
+              <div className="flex items-start gap-3 rounded-xl border border-white/10 bg-white/5 p-4">
                 <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#176ca3]/30 text-[#91dcff]">
                   <Clock className="h-5 w-5" />
                 </span>
@@ -276,12 +279,12 @@ export function Footer() {
               </div>
             </div>
 
-            {/* WhatsApp */}
             <a
               href="https://wa.me/919084611723?text=Hello%20TechNet%20Solution%2C%20I%20want%20to%20discuss%20a%20software%20project."
               target="_blank"
               rel="noopener noreferrer"
-              className="group mt-5 flex h-12 w-full items-center justify-center rounded-xl bg-[#25D366] px-5 text-sm font-extrabold text-white shadow-lg shadow-[#25D366]/10 transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#20bd5a] hover:shadow-xl"
+              aria-label="Connect with TechNet Solution on WhatsApp"
+              className="group mt-5 flex h-12 w-full items-center justify-center rounded-xl bg-[#25D366] px-5 text-sm font-extrabold text-white shadow-lg shadow-[#25D366]/10 transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#20bd5a] hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
             >
               <MessageCircle className="mr-2 h-5 w-5" />
               Connect on WhatsApp
@@ -291,7 +294,7 @@ export function Footer() {
         </div>
 
         {/* Security & Support Strip */}
-        <div className="mt-12 grid grid-cols-1 gap-4 rounded-2xl border border-white/10 bg-white/5] p-5 sm:grid-cols-3">
+        <div className="mt-12 grid grid-cols-1 gap-4 rounded-2xl border border-white/10 bg-white/5 p-5 sm:grid-cols-3">
           <div className="flex items-center gap-3">
             <ShieldCheck className="h-6 w-6 shrink-0 text-[#70c7ee]" />
 
@@ -307,12 +310,10 @@ export function Footer() {
           </div>
 
           <div className="flex items-center gap-3">
-            <HeadsetIcon />
+            <Headphones className="h-6 w-6 shrink-0 text-[#70c7ee]" />
 
             <div>
-              <p className="text-sm font-bold text-white">
-                Local Support
-              </p>
+              <p className="text-sm font-bold text-white">Local Support</p>
 
               <p className="mt-0.5 text-xs text-white/50">
                 Quick assistance when needed
@@ -338,39 +339,16 @@ export function Footer() {
 
       {/* Bottom Footer */}
       <div className="relative border-t border-white/10 bg-[#03182c]">
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-5 px-4 py-6 text-center sm:px-6 md:flex-row md:text-left lg:px-8">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-4 py-6 text-center sm:px-6 md:flex-row md:text-left lg:px-8">
           <p className="text-sm text-white/55">
             &copy; {currentYear}{' '}
             <span className="font-bold text-white/80">TechNet Solution</span>.
             All rights reserved.
           </p>
 
-          <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-sm">
-            <a
-              href="/privacy-policy"
-              className="text-white/55 transition-colors hover:text-[#91dcff]"
-            >
-              Privacy Policy
-            </a>
-
-            <span className="hidden h-1 w-1 rounded-full bg-white/25 sm:block" />
-
-            <a
-              href="/terms-of-service"
-              className="text-white/55 transition-colors hover:text-[#91dcff]"
-            >
-              Terms of Service
-            </a>
-
-            <span className="hidden h-1 w-1 rounded-full bg-white/25 sm:block" />
-
-            <a
-              href="/cookie-policy"
-              className="text-white/55 transition-colors hover:text-[#91dcff]"
-            >
-              Cookie Policy
-            </a>
-          </div>
+          <p className="text-sm text-white/50">
+            Custom software solutions developed in India.
+          </p>
         </div>
       </div>
     </footer>
@@ -382,18 +360,10 @@ function FooterHeading({ title }: { title: string }) {
     <div>
       <h3 className="text-lg font-extrabold text-white">{title}</h3>
 
-      <div className="mt-3 flex items-center gap-1">
+      <div className="mt-3 flex items-center gap-1" aria-hidden="true">
         <span className="h-1 w-8 rounded-full bg-[#49a5d6]" />
         <span className="h-1 w-2 rounded-full bg-[#91dcff]" />
       </div>
     </div>
-  )
-}
-
-function HeadsetIcon() {
-  return (
-    <span className="flex h-6 w-6 shrink-0 items-center justify-center">
-      <Phone className="h-6 w-6 text-[#70c7ee]" />
-    </span>
   )
 }

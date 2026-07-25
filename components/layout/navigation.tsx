@@ -40,10 +40,10 @@ export function Navigation() {
     { name: 'Services', href: '#services' },
     { name: 'Products', href: '#products' },
     { name: 'Features', href: '#features' },
-    { name: 'Technologies', href: '#technologies' },
+    // { name: 'Technologies', href: '#technologies' },
     { name: 'Why Us', href: '#why-us' },
     { name: 'Process', href: '#process' },
-    { name: 'Industries', href: '#industries' },
+    // { name: 'Industries', href: '#industries' },
     { name: 'FAQ', href: '#faq' },
     
   ]
